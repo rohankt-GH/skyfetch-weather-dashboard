@@ -250,5 +250,65 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* ============================= */
+/* 💾 Recent Searches Section */
+/* ============================= */
+
+.recent-searches-section {
+    margin: 20px 0;
+    display: none;
+}
+
+.recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recent-header h4 {
+    font-size: 1rem;
+    color: #666;
+}
+
+#recent-searches-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recent-search-btn {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.recent-search-btn:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.recent-search-btn:active {
+    transform: scale(0.95);
+}
+
+.clear-history-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-history-btn:hover {
+    background: #ffdddd;
+    color: #b00020;
+}
 
 

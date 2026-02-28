@@ -141,3 +141,54 @@ h1 {
         width: 100%;
     }
 }
+/* ============================== */
+/* ❌ Error Styles */
+/* ============================== */
+
+.error-message {
+    background: #ffe5e5;
+    color: #b00020;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #b00020;
+    animation: fadeIn 0.4s ease-in;
+}
+
+/* ============================== */
+/* ⏳ Loading Styles */
+/* ============================== */
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================== */
+/* 🏠 Welcome Message */
+/* ============================== */
+
+.welcome-message {
+    padding: 20px;
+    color: #555;
+    animation: fadeIn 0.5s ease-in;
+}

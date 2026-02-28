@@ -43,7 +43,7 @@ A beautiful, interactive weather dashboard that provides real-time weather data 
 ## 💻 Local Setup
 
 1. Clone the repository:
-```bash
+
 git clone https://github.com/YOUR-USERNAME/skyfetch-weather-dashboard.git
 Navigate to project directory:
 cd skyfetch-weather-dashboard
@@ -57,51 +57,14 @@ Open index.html in your browser
 This project is open source and available under the MIT License.
 
 👨‍💻 Author
-[Your Name]
+[Rohan Kumar Talla]
 
-GitHub: [@your-username]
-LinkedIn: [Your LinkedIn]
+GitHub: [@rohankt-GH]
+LinkedIn: [Rohan Kumar Talla]
 🙏 Acknowledgments
 Weather data provided by OpenWeatherMap API
 Icons from OpenWeatherMap
 Built as part of Frontend Web Development Advanced Course
-</details>
 
-### 6.2 Optional: Create .gitignore (If not exists)
 
-**Your task:** Update `.gitignore` to exclude unnecessary files
 
-<details>
-<summary>View Code</summary>
-
-Dependencies
-node_modules/
-
-Environment variables (if you use them)
-.env .env.local
-
-OS files
-.DS_Store Thumbs.db
-
-Editor directories
-.vscode/ .idea/
-
-Logs
-*.log
-
-</details>
-
-### 6.3 Optional: Move API Key to Separate File
-
-For better security, you can separate your API key.
-
-**Your task:** Create `config.js` file
-
-<details>
-<summary>View Code</summary>
-
-```javascript
-// TODO: Create config.js (optional)
-const CONFIG = {
-    API_KEY: 'YOUR_API_KEY_HERE'
-};

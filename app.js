@@ -36,6 +36,7 @@ async function getWeather(city) {
         }
 
     } finally {
+        // Re-enable button
         searchBtn.disabled = false;
         searchBtn.textContent = "🔍 Search";
     }
@@ -63,7 +64,7 @@ function displayWeather(data) {
 
     weatherDisplay.innerHTML = weatherHTML;
 
-    // Focus back to input for better UX
+    // Focus back to input
     cityInput.focus();
 }
 
@@ -116,13 +117,15 @@ searchBtn.addEventListener('click', function () {
     }
 
     getWeather(city);
+
+    // Clear input (nice UX)
     cityInput.value = "";
 });
 
 // ==============================
 // ⌨ Enter Key Support
 // ==============================
-cityInput.addEventListener('keypress', function (event) {
+cityInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         searchBtn.click();
     }

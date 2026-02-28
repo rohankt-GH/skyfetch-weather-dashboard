@@ -83,4 +83,61 @@ h1 {
 .weather-icon {
     width: 100px;
     height: 100px;
+
+}
+/* ============================= */
+/* 🔎 Search Section Styles */
+/* ============================= */
+
+.search-section {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Input Field */
+#city-input {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+#city-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+/* Search Button */
+#search-btn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+#search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustment */
+@media (max-width: 480px) {
+    .search-section {
+        flex-direction: column;
+    }
+
+    #search-btn {
+        width: 100%;
+    }
 }
